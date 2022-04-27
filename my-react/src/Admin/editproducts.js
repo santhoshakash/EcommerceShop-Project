@@ -13,7 +13,7 @@ import { getoneproduct } from "./API/imageApi.js";
 import { Loading } from "../loading.js";
 import "react-toastify/dist/ReactToastify.css";
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+
 import { useNavigate } from "react-router";
 
 export const Editproduct = () => {

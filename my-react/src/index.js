@@ -6,7 +6,7 @@ import { Authcontextprovider } from "./context/Authcontext";
 import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
-import { store } from "./Redux/store";
+
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 
@@ -15,13 +15,12 @@ export const stripepromise = loadStripe(
 );
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Authcontextprovider>
-      <Elements stripe={stripepromise}>
-        <App />
-      </Elements>
-    </Authcontextprovider>
-  </Provider>,
+  <Authcontextprovider>
+    <Elements stripe={stripepromise}>
+      <App />
+    </Elements>
+  </Authcontextprovider>,
+
   document.getElementById("root")
 );
 

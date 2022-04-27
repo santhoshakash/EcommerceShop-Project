@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { useDispatch, useSelector } from "react-redux";
+
 import { AdminHeader } from "./adminHeader";
 import { Link } from "react-router-dom";
 import { allProducts } from "../context/apicall";
@@ -39,14 +39,6 @@ export const CreateDiscount = () => {
   }, []);
 
   let listOfProduct = products1;
-
-  // const productList = useSelector((state) => state.productList);
-  // const { loading, error, products } = productList;
-  // let listOfProduct = products;
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(Productslist());
-  // }, [dispatch]);
 
   const addSpecificProduct = () => {
     let tempObj = { ...specificProduct };

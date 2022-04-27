@@ -1,4 +1,3 @@
-import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState, useContext } from "react";
 import { toast, ToastContainer } from "react-toastify";
 
@@ -6,7 +5,6 @@ import { Header } from "./Header";
 import { Link } from "react-router-dom";
 
 import React from "react";
-import { registers } from "../Redux/Actions/userActions";
 
 import { useNavigate } from "react-router";
 import { useForm } from "react-hook-form";

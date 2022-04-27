@@ -1,9 +1,6 @@
 import "../components/css/style.css";
 import React, { useEffect, useState, useContext } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
-import { Productslist } from "../Redux/Actions/productActions";
 import { Usercontext } from "../context/Authcontext";
 import { allProducts } from "../context/apicall";
 import { Loading } from "../loading";

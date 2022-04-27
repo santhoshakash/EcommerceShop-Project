@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+
 import { getimages } from "./API/imageApi.js";
 import { set, useForm } from "react-hook-form";
 import { addproduct } from "./API/imageApi.js";

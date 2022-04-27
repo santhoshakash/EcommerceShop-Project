@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+
 import { useNavigate, useParams } from "react-router";
 import { toast, ToastContainer } from "react-toastify";
 
@@ -29,13 +29,7 @@ export const Editdiscount = () => {
     autoClose: 4000,
   };
   const toastId = React.useRef(null);
-  // const productList = useSelector((state) => state.productList);
-  // const { loading, error, products } = productList;
-  // let listOfProduct = products;
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(Productslist());
-  // }, [dispatch]);
+ 
 
   const allfetchProduct = async () => {
     setLoading(true);

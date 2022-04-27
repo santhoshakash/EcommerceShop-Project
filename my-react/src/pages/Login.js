@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
-import { useDispatch, useSelector } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
 
 import { Footer } from "./Footer";
@@ -35,7 +34,7 @@ export function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassowrd] = useState("");
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+
   const config = {
     // credentials: "include",
 

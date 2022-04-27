@@ -1,4 +1,3 @@
-import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useMemo, useState, useContext } from "react";
 import { useNavigate, useParams } from "react-router";
 import { Footer } from "./Footer";
@@ -16,7 +15,6 @@ import { Header } from "./Header";
 import { Usercontext } from "../context/Authcontext";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { getCartItems } from "../Redux/Actions/cartActions";
 import { useForm } from "react-hook-form";
 import { useStripe } from "@stripe/react-stripe-js";
 import { getorderdetail } from "../userApi/api";

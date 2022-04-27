@@ -11,7 +11,7 @@ import { Loading } from "../loading";
 export const Orderdetail = () => {
   let { orderid } = useParams();
   console.log(orderid);
-  //   const dispatch = useDispatch();
+
   const [orders, setorders] = useState();
   const [numbers, setnumbers] = useState();
   const [loading, setloading] = useState(false);

@@ -10,7 +10,7 @@ export const Header = () => {
   const [userId, setuserId] = useState();
   const [userInfo, setUserInfo] = useState(false);
   const [logged, setlogged] = useState(false);
-  // const dispatch = useDispatch()
+
   const navigate = useNavigate();
 
   useEffect(() => {
